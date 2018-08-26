@@ -1,0 +1,125 @@
+<html>
+  <body>
+    <script>
+      /* Variables */
+
+      // Declare a variable called 'foo' with a value of 5 which can change
+      let foo = 5;
+
+      // Declare a variable called 'bar' with a value of 'Hello, World!' that cannot change
+      const bar = 'Hello, World!'
+
+      // Declare a let variable 'x' with a value 12.5
+      let x = 12.5;
+      // Re-assign x to 5
+        x = 5; 
+      // Re-assign x to 1000000
+        x = 1000000;
+      // Declare a const variable called 'y' with the value true
+        const y = true;
+      // Re-assign y to false 
+       // y = false; causes error
+      // What happens? Write below:
+      // The last declaration is the true value of the 'let' assignments, but const will never change
+      /* Maths Challenges */
+
+      // Declare a let variable 'multiplication' with the value of 12 multiplied by 15
+      let multiplication =  12 * 15;
+        document.write('Multiplication = ' + multiplication);
+        document.write("<br>");
+      // Declare a const variable 'remainder' with the value of 12 remainder 15 
+      const remainder = 12%15;
+        //remainder 15 doesn't seem possible
+        document.write(remainder);
+        document.write("<br>");
+      // Declare a const variable 'division' with the value of 12 divided by 15 
+        const division = 12/15;
+        document.write(division);
+        document.write("<br>");
+      // Declare a let variable 'power' with the value of 12 to the power of 15 
+        const power = 12**15;;
+        document.write(power);
+        document.write("<br>");
+      // Declare a let variable 'algebra' with the value of the variable (multiplication + remainder - 5)
+        let algebra = multiplication + remainder - 5;
+        document.write(algebra);
+        document.write("<br>");
+      // Declare a const variable 'subtraction' with the value of 'algebra' - 'remainder'
+        const subtraction = algebra - remainder;
+        document.write(subtraction);
+        document.write("<br>");
+      // Declare a const variable 'brackets' with the value of power times algebra divided multiplication (and the times has to executed first!!)
+        const brackets = power * algebra / multiplication;
+        document.write(brackets);
+        document.write("<br>");
+      // Declare a variable called 'orderOfOperations' that has the value: 
+      // brackets to the power of multiplication + remainder - division 
+        var orderOfOperations = brackets** multiplication + remainder - division;
+        document.write(orderOfOperations);
+        document.write("<br>");
+
+      // Read the statements below: 
+      const greaterThan = 5 > 5; 
+      const greaterThanOrEqual = 5 >= 5;
+      const greaterThanAlgebra = multiplication > remainder; 
+      const compoundAlgebra = ((12 * remainder) >= brackets);
+        document.write(greaterThan);
+        document.write("<br>");
+        document.write(greaterThanOrEqual);
+        document.write("<br>");
+        document.write(greaterThanAlgebra);
+        document.write("<br>");
+        document.write(compoundAlgebra);
+        document.write("<br>");
+
+      // What is the value of each one?
+      // Write these down before you console.log them all! 
+
+      // greaterThan = false
+      // greaterThanOrEqual = true
+      // greaterThanAlgebra = true
+      // compoundAlgebra = false
+
+
+      // CHALLENGE 1: 
+      // What is the result of this going to be? Think about the order of operations 
+      // and work out the answer before you check!!
+      const challengeOne = 5 ** 2 * 3 + 1;
+        document.write(challengeOne);
+        document.write("<br>");
+      // Answer: 
+
+      // CHALLENGE 2: 
+
+      // How could you create a statement which would calculate the square root of 25 using 
+      // only the operators given? 
+      const squareRoot = 25 ** (1/2);
+      document.write(squareRoot);
+        document.write("<br>");
+
+      /* If statements */
+
+      // Create an 'if' statement that will definitely run 
+      if (1 < 2) {
+
+      }
+
+      // Create an 'if' statement that will definitely Not run 
+      if (2 < 1) {
+
+      }
+
+      // Create an if statement that will Print out a different message depending on a different score
+      const score = 75; // change the value of score here 
+      if (score > 0 && score <= 25) {
+        document.writeln('You failed!');
+      } else if (score > 25 && score <= 50) {
+        document.writeln('You passed! :D');
+      } else if (score > 50 && score <= 70) {
+        document.writeln('Ayy you got a first!');
+      } else if (score > 70) {
+        document.writeln('You absolutely smashed this!');
+      }
+    </script>
+  </body>
+</html>

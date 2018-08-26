@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<script>
+    const firstNumber = 3;
+    const secondNumber = 4;
+    console.log("Question 1: Condition Logic ============================");
+    // make the system console.log('here') by putting it in the right portion
+    if (firstNumber === 3 && secondNumber < 5) {
+        console.log('here');
+    } else if (firstNumber > secondNumber) {
+        // This is the wrong portion
+    }
+
+
+
+    console.log("Question 2: OR Gates ===================================");
+    // make an if statement that uses or - ||
+    if (firstNumber < 4 || secondNumber > 2) {
+        console.log('an or statement was used!');
+    }
+
+
+
+    console.log("Question 3: Array Index ================================");
+    // console.log the third item from this array. 
+    // You access items in the square brackets with numbers - array[3]
+    // The first item starts at 0
+    const someArray = ['hello', 'I am', 'learning', 'javascript'];
+    console.log(someArray[2]);
+
+
+    console.log("Question 4: Array Index Part 2 =========================");
+    // log the first and fourth item from secondArray
+    const secondArray = ['bill', 'ben', 'flower', 'pot', 'men'];
+    console.log(secondArray[0] + " & " + secondArray[3]);
+
+    console.log("Question 5: For loops incrementation ===================");
+    // finish this loop that logs the incrementor
+    for (let inc = 0; inc < 10; inc++) {
+      console.log(inc);
+    }
+
+
+    console.log("Question 6: Array printing =============================");
+    // create a constant array with 5 elements in it
+    // the for after it should print all of the elements
+    // replace ?? with your array name
+
+    const myArray = [2, 4, 6, 8, 10];
+    
+     for (let i = 0; i < myArray.length; i++) {
+       console.log(myArray[i])
+     }
+
+    console.log("Question 7: Array manipulation =========================");
+    // go through 'doubleArr' and print out the item * 2
+    const doubleArr = [1, 2, 3, 4, 5, 6];
+
+    for (let i = 0; i < doubleArr.length; i++) {
+        console.log(doubleArr[i] * 2);
+    }
+    
+    console.log("Question 8: While loops ================================");
+    // use the variable counter to make a while loop that loops 25 times
+    // and console.log's if the number is odd or even
+    // tip: use modulus '%' to find factors of 2
+    let counter = 1;
+    while (counter <= 25) {
+        if ((counter % 2) === 0) {
+            console.log(counter + " is even");
+        }else {
+            console.log(counter + " is odd");
+        }
+        counter++;
+    }
+
+
+    // [Hard]
+    console.log("HARD Question 9: Array declaration and manipulation ====");
+    // create an array, loop through it and log the item, log the item squared
+    // to raise to the power, use **
+
+    const newArray = [2, 4, 6, 8, 10];
+    for (let i = 0; i < newArray.length; i++) {
+        console.log(newArray[i]);
+        console.log(newArray[i] ** 2);
+    }
+
+    // [Hard]
+    console.log("HARD Question 10: Further loop logic ====================");
+    // use a loop to add items to a 'let' variable, total
+    let total = 0;
+    // loop here, then print total after
+    for (let i = 0; i < 10; i++) {
+        total += i;
+    }
+
+    console.log(total);
+
+
+    // [Advanced]
+    console.log("ADVANCED Question 11: Factorial ========================");
+    // use a loop to calculate numbers multiplied by the previous one.
+    // hint: start total at 1
+    let rando = 5;
+    let newTotal = 1; 
+    
+    while (rando > 1) {
+        newTotal *= rando;
+        rando--;
+    }
+    console.log(newTotal);
+    
+</script>
+
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="https://assets.contentful.com/mdhk9276ikwk/5O5ibCYrvO4iiEuQWwMS22/47cf4129a21dd97a6f81a1c1b9bc187b/styles.css" />
+</head>
+<body>
+  <div class="Task_Container">
+    <div class="Task_Inner">
+        <h1 class="Title">Task</h1>
+        <p>
+          Use your knowledge on LOOPS, ARRAYS and IF STATEMENTS to
+          Go through the array called <strong>FizzBuzz</strong> and
+          change the values:
+        </p>
+        <ul>
+          <li>Factor of 3 to <strong>Fizz</strong>.</li>
+          <li>Factor of 5 to <strong>Buzz</strong>.</li>
+          <li>Factors of both 3 and 5 (15) to <strong>FizzBuzz</strong>.</li>
+        </ul>
+        <p>
+          Print out your whole Array to the console using: console.log();
+        </p>
+        <p>
+          As an Extention, create an JSON object with your:<br />
+          name,<br />
+          lastName,<br />
+          age,<br />
+          jobRole.<br />
+          And console.log(yourObject); to view it in the browser console.
+        </p>
+    </div>
+  </div>
+  <hr />
+  <div class="Task_Container">
+    <script>
+      /*
+        This is the FizzBuzz array you need to modify
+        you can access each values by choosing an index
+        eg FizzBuzz[index], when index is 0 the array
+        will return values '1'
+        eg. (FizzBuzz[0] === 1) will return true
+        you can also use variables to access arrays.
+        let i = 0;
+        const firstItem = FizzBuzz[i];
+        the variable firstItem will hold the Number 1.
+      */
+      const FizzBuzz = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+        11,12,13,14,15,16,17,18,19,20,
+        21,22,23,24,25,26,27,28,29,30
+      ];
+      // Write your code here ==================================
+        for ( let i = 0; i < FizzBuzz.length; i++) {
+            if (((FizzBuzz[i] % 3) === 0) && ((FizzBuzz[i] % 5) === 0)) {
+                FizzBuzz[i] = "FizzBuzz";
+            }else {
+                if ((FizzBuzz[i] % 5) === 0) {
+                FizzBuzz[i] = "Buzz";
+                }else if ((FizzBuzz[i] % 3) === 0) {
+                FizzBuzz[i] = "Fizz";
+                }
+            }
+            console.log(FizzBuzz[i]);
+        }
+        
+        const obj = {
+            name: "Jo",
+            lastName: "Starkie",
+            age: 25,
+            jobRole: "System Analyst",
+        }
+        console.log(obj);
+
+      // Do not write any more code past this point==============
+    </script>
+  </div>
+  <hr />
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code!</title>
+  </head>
+  <body>
+    <h3>Open your browser console to see your code output<h3>
+
+    <script type="text/javascript">
+      console.log("Functions and Higher Order Functions");
+
+
+      console.log("-------Question 1-------");
+      // Create a function called hello that takes a name
+      // as a parameter and returns a string saying:
+      // 'Hello, yourname'.
+
+      // TIP: You can connect strings
+      // together using +. 'one' + 'two' = "onetwo"
+
+      // CODE HERE
+        function hello(name) {
+            console.log('Hello ' + name);
+        }
+        hello('Miss');
+
+      console.log("-------Question 2-------");
+      // Create a function that takes the following array,
+      // loops through it outputing each item.
+
+      const myArray = ['Fizz', 'Buzz', 'FizzBuzz'];
+
+      // CODE HERE
+        function outputArray(array) {
+            for (let i = 0; i < array.length; i++) {
+                console.log(array[i]);
+            }
+        }
+        outputArray(myArray);
+
+
+      console.log("-------Question 3-------");
+      // Create a function that takes an array as parameter 1
+      // and a string as parameter 2. Return the array with the
+      // string added to the end.
+
+      const addToMe = ['Fizz', 'Buzz', 'FizzBuzz'];
+      const addMe = 'Add me to the array';
+
+      // CODE HERE
+        function addToArray(array, toAdd) {
+            array[array.length] = toAdd;
+            console.log(array);
+        }
+        addToArray(addToMe, addMe);
+
+      console.log("Higher-Order Functions");
+
+      console.log("-------Question 1-------");
+      // Using the following array and the filter Higher-Order
+      // function return just 'Harry'
+      let devs = ['Sam S', 'Sam T', 'Peter', 'Harry'];
+
+      devs = devs.filter(function(name) {
+          return name === 'Harry';
+      });
+
+      console.log(devs);
+
+      console.log("-------Question 2-------");
+      // Using the following array and map turn each item
+      // into an object that looks like the following:
+      // {
+      //   name: putnamehere,
+      //   role: 'Developer'
+      // }
+
+
+      let moreDevs = ['Sam S', 'Sam T', 'Peter', 'Harry'];
+
+      moreDevs = moreDevs.map(function(dev) {return {name: dev, role: 'Developer'}});
+        
+
+      console.log(moreDevs);
+
+      console.log("-------Question 3-------");
+      // Using map and filter. Square the numbers in the array
+      // and only keep the even squares.
+
+      //TIP: You can chain higher order functions. Like the follwing
+      // thing.map(item => {return item+2}).filter(item => item !== 99);
+
+      let squareEven = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      // CODE HERE
+        let newSquares = squareEven.map(entries => {return entries ** 2}).filter(evens => evens % 2 === 0);
+        console.log(newSquares);
+        
+    </script>
+  </body>
+</html>

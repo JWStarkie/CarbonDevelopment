@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Introduction to DOM Manipulation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="task">
+    <header>
+      <h1>Your Task</h1>
+    </header>
+    <ol>
+      <li>Get a handle of all of the elements in the DOM.</li>
+      <li>Change the textContent of the title to what you want it to be.</li>
+      <li>Get all of the green elements in one command and set them to be darker in colour.</li>
+      <li>Get <strong>only</strong> the green and bold element, remove the boldness, either by style OR classList.</li>
+      <li><strong>[Hard]</strong> Have an alert pop-up when you click the button. This should contain your name from the input box.</li>
+      <li><strong>[Advanced]</strong> Write some JavaScript to ensure that both input areas have something in before the alert above</li>
+    </ol>
+    <header>
+      <h1>Outcomes/Technologies Learnt</h1>
+    </header>
+    <ol>
+      <li>To be able to use <code>document.getElementById</code></li>
+      <li>To be able to use <code>document.querySelector</code> and <code>document.querySelectorAll</code></li>
+      <li>To be able to add and remove classes with <code>element.classList.add</code> and <code>element.classList.remove</code></li>
+      <li>To be able to get values in inputs with <code>const name = element.value</code></li>
+    </ol>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="session">
+    <div id="title">Intro to DOM Manipulation</div>
+    <ul>
+      <li class="green">I'm the first green element</li>
+      <li class="green">I'm a greeeeeen element</li>
+      <li class="green bold">I'm a bold green element!</li>
+    </ul>
+    <form>
+      <div class="input-area">
+        <label for="name">Enter your name</label>
+        <input type="text" id="name">
+      </div>
+      <div class="input-area">
+        <div>
+          <label for="description">Enter some information about yourself</label>
+        </div>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+      </div>
+      <a href="#!" class="button">Submit!</a>
+    </form>
+  </div>
+
+
+</body>
+<script src="main.js"></script>
+</html>
